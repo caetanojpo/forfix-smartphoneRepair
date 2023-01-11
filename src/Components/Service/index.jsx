@@ -18,13 +18,6 @@ const Service = (props) => {
         </CardHeader>
         <CardBody display="flex" flexDir="column" alignItems="center">
           <Icon icon={props.icon} width="100" height="100" />
-          <Stack mt="6" spacing="3">
-            <ul>
-              {array.forEach((e) => {
-                <li>{e}</li>;
-              })}
-            </ul>
-          </Stack>
           {/* <Stack mt="6" spacing="3">
             
               <li>Substituição de Tela</li>
