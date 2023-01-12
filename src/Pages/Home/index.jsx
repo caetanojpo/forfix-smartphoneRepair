@@ -2,8 +2,7 @@ import Banner from '../../Components/Banner';
 import Infos from '../../Components/Infos';
 import Navbar from '../../Components/Navbar';
 import Topper from '../../Components/Topper';
-import Services from '../../Components/Services';
-import About from '../../Components/About';
+import Services from '../../Sections/Services';
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
       <Banner />
       <Infos />
       <Services />
-      <About />
     </>
   );
 };
