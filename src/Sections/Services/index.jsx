@@ -1,4 +1,4 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
 import Service from '../../Components/Service';
 
 const Services = () => {
@@ -31,7 +31,7 @@ const Services = () => {
     'Fones de Ouvido',
     'Película',
     'Acessórios para Notebook',
-    'Adaptadores e itens externos',
+    'Adaptadores e Itens externos',
   ];
 
   return (
@@ -39,23 +39,41 @@ const Services = () => {
       <Heading textAlign="center" p="30px">
         Serviços
       </Heading>
-      <Box>
-        <Service
-          title="Smartphone"
-          icon="ion:phone-portrait-outline"
-          description={smartphoneServices}
-        />
-        <Service
-          title="Computador"
-          icon="ion:desktop-outline"
-          description={computerServices}
-        />
-        <Service
-          title="Console"
-          icon="carbon:game-console"
-          description={consoleServices}
-        />
-      </Box>
+      <Grid
+        h="300px"
+        templateRows="repeat(2, 1fr)"
+        templateColumns="repeat(4, 1fr)"
+        gap={10}
+      >
+        <GridItem colSpan={2} marginLeft="110px" border="1px solid red">
+          <Service
+            title="Smartphone"
+            icon="ion:phone-portrait-outline"
+            description={smartphoneServices}
+          />
+        </GridItem>
+        <GridItem colSpan={2} marginLeft="110px">
+          <Service
+            title="Computador"
+            icon="ion:desktop-outline"
+            description={computerServices}
+          />
+        </GridItem>
+        <GridItem colSpan={2} marginLeft="110px">
+          <Service
+            title="Console"
+            icon="carbon:game-console"
+            description={consoleServices}
+          />
+        </GridItem>
+        <GridItem colSpan={2} marginLeft="110px">
+          <Service
+            title="Acessórios"
+            icon="mdi:cable-data"
+            description={accessoriesServices}
+          />
+        </GridItem>
+      </Grid>
     </>
   );
 };

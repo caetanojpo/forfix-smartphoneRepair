@@ -1,35 +1,47 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Divider,
-  Heading,
-  Stack,
-} from '@chakra-ui/react';
+import { Box, Flex, List, ListItem, Text } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
-import { array } from 'prop-types';
 
 const Service = (props) => {
   return (
     <>
-      <Card maxW="sm" display="flex" alignItems="center">
-        <CardHeader>
-          <Heading size="md">{props.title}</Heading>
-        </CardHeader>
-        <CardBody display="flex" flexDir="column" alignItems="center">
-          <Icon icon={props.icon} width="100" height="100" />
-
-          <Stack mt="6" spacing="3">
-            <ul>
-              <li>Substituição de Tela</li>
-              <li>Substituição de Bateria</li>
-              <li>Substituição de Conector</li>
-              <li>Reparo em Placa</li>
-            </ul>
-          </Stack>
-        </CardBody>
-        <Divider />
-      </Card>
+      <Flex h="300px" width="100%">
+        <Flex
+          width="18%"
+          height="18%"
+          justifyContent="center"
+          alignItems="center"
+          border="1px solid blue"
+        >
+          <Icon icon={props.icon} width="50px" />
+        </Flex>
+        <Flex
+          width="70%"
+          flexDirection="column"
+          border="1px solid green"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Text fontSize="40px" fontWeight="500">
+            {props.title}
+          </Text>
+          <List spacing="3">
+            {props.description.map((item) => {
+              return (
+                <ListItem display="flex" lineHeight="90%" fontSize="18px">
+                  <Icon
+                    icon="material-symbols:check-circle-rounded"
+                    color="#EF8D4E"
+                  />
+                  <Text marginLeft="5px" fontWeight="400">
+                    {item}
+                  </Text>
+                </ListItem>
+              );
+            })}
+            ;
+          </List>
+        </Flex>
+      </Flex>
     </>
   );
 };
