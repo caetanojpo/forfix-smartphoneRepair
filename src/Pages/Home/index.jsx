@@ -1,8 +1,10 @@
-import Banner from '../../Components/Banner';
-import Infos from '../../Components/Infos';
-import Navbar from '../../Components/Navbar';
-import Topper from '../../Components/Topper';
+import About from '../../Sections/About';
+import Banner from '../../Sections/Banner';
+import Infos from '../../Sections/Infos';
+import Navbar from '../../Sections/Navbar';
+import Topper from '../../Sections/Topper';
 import Services from '../../Sections/Services';
+import Team from '../../Sections/Team';
 
 const Home = () => {
   return (
@@ -11,7 +13,8 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Infos />
-      <Services />
+      <About id="about" />
+      <Team id="team" />
     </>
   );
 };
