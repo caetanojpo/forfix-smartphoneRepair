@@ -19,6 +19,7 @@ import './Team.css';
 const Team = () => {
   return (
     <Flex
+      marginTop="50px"
       id="team"
       className="team"
       h={{ base: '100%', lg: '100vh' }}
