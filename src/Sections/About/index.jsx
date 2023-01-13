@@ -1,10 +1,7 @@
-import { Box, Flex, Highlight, Image, Text } from '@chakra-ui/react';
-import { Icon } from '@iconify/react';
+import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import AboutCard from '../../Components/AboutCard';
 
 const About = () => {
-  const elementImage = '<Image h="100px" w="100px" src="/FORFIX_6-12.png" />';
-
   return (
     <Box
       id="about"

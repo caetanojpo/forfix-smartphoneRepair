@@ -36,7 +36,13 @@ const Services = () => {
   ];
 
   return (
-    <Box height="850px">
+    <Flex
+      id="services"
+      class="services"
+      flexDirection="column"
+      height="100%"
+      padding="50px 0px"
+    >
       <Heading
         textAlign="center"
         h={{ base: '15%', lg: '10%' }}
@@ -85,7 +91,7 @@ const Services = () => {
           />
         </GridItem>
       </Grid>
-    </Box>
+    </Flex>
   );
 };
 
