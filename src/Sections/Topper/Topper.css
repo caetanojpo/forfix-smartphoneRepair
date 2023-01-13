@@ -1,0 +1,23 @@
+.facebook {
+    transition: 0.4s;
+}
+
+.facebook:hover {
+    color: #EF8D4E
+}
+
+.insta {
+    transition: 0.4s;
+}
+
+.insta:hover {
+    color: #EF8D4E
+}
+
+.whats {
+    transition: 0.4s;
+}
+
+.whats:hover {
+    color: #EF8D4E
+}

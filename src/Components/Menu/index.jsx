@@ -7,8 +7,8 @@ const Menu = ({ open }) => {
     <StyledMenu open={open}>
       <a href="/">Home</a>
       <a href="/">Serviços</a>
-      <a href="/">A Empresa</a>
-      <a href="/">Equipe</a>
+      <a href="#about">A Empresa</a>
+      <a href="#team">Equipe</a>
     </StyledMenu>
   );
 };

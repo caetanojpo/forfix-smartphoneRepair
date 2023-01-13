@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
 export const BannerContainer = styled.div`
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
+  background-image: url('/bg-mobile2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: flex;
 
   @media screen and (min-width: 768px) {
     height: 80vh;
-    background-image: url('/cool-background.png');
+    background-image: url('/cool-background3.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
