@@ -19,7 +19,6 @@ import './Team.css';
 const Team = () => {
   return (
     <Flex
-      marginTop="50px"
       id="team"
       className="team"
       h={{ base: '100%', lg: '100vh' }}
@@ -44,8 +43,8 @@ const Team = () => {
       >
         <Box>
           <Image
-            w={{ base: '', lg: '300px' }}
-            src="/perfil.jpg"
+            w={{ base: '', lg: '200px' }}
+            src="/perfil.jpeg"
             borderRadius="200px"
           />
         </Box>

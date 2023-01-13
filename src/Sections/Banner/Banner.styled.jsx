@@ -7,7 +7,7 @@ export const BannerContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  padding: 0px 50px;
   display: flex;
 
   @media screen and (min-width: 768px) {
