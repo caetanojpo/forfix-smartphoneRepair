@@ -9,7 +9,6 @@ const Banner = () => {
         h="100%"
         flexDir="column"
         justifyContent="space-evenly"
-        padding={{ base: '0px 20px', lg: '0px 50px' }}
       >
         <Box
           display="flex"
