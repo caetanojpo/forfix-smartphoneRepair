@@ -1,4 +1,4 @@
-import { Box, Flex, Highlight, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Highlight, Text } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
 
 const AboutCard = (props) => {

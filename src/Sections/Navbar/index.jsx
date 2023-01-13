@@ -2,7 +2,7 @@ import { Image } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme';
-import Burger from '../../Components/Burger/Burger';
+import Burger from '../../Components/Burger';
 import Menu from '../../Components/Menu';
 import {
   ButtonNav,
@@ -34,7 +34,7 @@ const Navbar = () => {
             <LiNav as="a" href="/">
               Home
             </LiNav>
-            <LiNav as="a" href="/">
+            <LiNav as="a" href="#services">
               Serviços
             </LiNav>
             <LiNav as="a" href="#about">
