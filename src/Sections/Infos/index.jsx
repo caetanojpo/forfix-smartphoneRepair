@@ -1,5 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
-import { Icon } from '@iconify/react';
+import { Flex } from '@chakra-ui/react';
 import InfoCard from '../../Components/InforCard';
 import './Infos.css';
 
