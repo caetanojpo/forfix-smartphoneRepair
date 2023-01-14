@@ -6,8 +6,8 @@ const Service = (props) => {
   return (
     <Box
       p="10px 10px"
-      w={{ base: '300px', lg: '450px' }}
-      h={{ base: '420px', lg: '550px' }}
+      w={{ base: '300px', lg: '390px' }}
+      h={{ base: '420px', lg: '480px' }}
       borderRadius="20px"
       boxShadow="7px 10px 20px #aeb7c1,
       -19px -19px 38px #ffffff"
@@ -16,7 +16,7 @@ const Service = (props) => {
         justifyContent="center"
         alignItems="center"
         bg="#EF8D4E"
-        h={{ base: '100px', lg: '175px' }}
+        h={{ base: '100px', lg: '115px' }}
         borderRadius="5% 5% 100% 0% / 11% 8% 65% 100%"
       >
         <Icon className="icones" icon={props.icon} color="white" />
@@ -45,7 +45,7 @@ const Service = (props) => {
               <ListItem
                 display="flex"
                 lineHeight="100%"
-                fontSize={{ base: '13px', lg: '18px' }}
+                fontSize={{ base: '13px', lg: '15px' }}
               >
                 <Icon
                   icon="material-symbols:check-circle-rounded"

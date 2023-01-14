@@ -28,9 +28,9 @@ const Services = () => {
 
   const accessoriesServices = [
     'Cabos',
+    'Película',
     'Capinhas',
     'Fones de Ouvido',
-    'Película',
     'Acessórios para Notebook',
     'Adaptadores e Itens externos',
   ];
@@ -41,13 +41,12 @@ const Services = () => {
       class="services"
       flexDirection="column"
       height="100%"
-      padding="50px 0px"
+      padding="60px 0px"
     >
       <Heading
         textAlign="center"
         h={{ base: '15%', lg: '10%' }}
-        p="20px 0px"
-        fontSize={{ base: '55px', lg: '70px' }}
+        fontSize={{ base: '55px', lg: '65px' }}
       >
         Serviços
       </Heading>
