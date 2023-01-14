@@ -1,19 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Container,
-  Image,
-  Stack,
-  Heading,
-  Text,
-  Divider,
-  ButtonGroup,
-  Button,
-  Box,
-  Flex,
-} from '@chakra-ui/react';
+import { Image, Text, Box, Flex } from '@chakra-ui/react';
 import './Team.css';
 
 const Team = () => {
@@ -46,6 +31,7 @@ const Team = () => {
             w={{ base: '', lg: '200px' }}
             src="/perfil.jpeg"
             borderRadius="200px"
+            outline="5px solid black"
           />
         </Box>
 

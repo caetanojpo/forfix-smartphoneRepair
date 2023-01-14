@@ -43,36 +43,17 @@ const About = () => {
           justifyContent="space-between"
           gap={{ base: '10px', lg: '' }}
         >
-          <Box
-            display="flex"
-            flexDir={{ base: 'column', lg: 'row' }}
-            alignItems="center"
-          >
-            <Image h="100px" w="100px" src="/FORFIX_6-12.png" />
-            <Box
-              display="flex"
-              flexDir="column"
-              w={{ base: '', lg: '60%' }}
-              gap="10px"
-            >
-              <Text fontWeight="700" fontSize="20px" color="#EF8D4E">
-                A empresa
-              </Text>
-              <Flex flexDir="column" gap="5px">
-                <Text textAlign="justify">
-                  Forfix Assistência técnica fundada no ano de 2022, oferece
-                  atualmente serviços de manutenção de celulares, notebooks e
-                  vídeo games, com mão de obra especializada e as melhores peças
-                  para reposição no mercado.
-                </Text>
-                <Text textAlign="justify">
-                  Todos os reparos realizados contam com garantia do serviço e
-                  peça, variando de acordo com cada produto, para você nosso
-                  cliente ter a segurança que merece.
-                </Text>
-              </Flex>
-            </Box>
-          </Box>
+          <AboutCard
+            imagePath="/FORFIX_6-12.png"
+            title="A empresa"
+            text1="Forfix Assistência técnica fundada no ano de 2022, oferece
+            atualmente serviços de manutenção de celulares, notebooks e
+            vídeo games, com mão de obra especializada e as melhores peças
+            para reposição no mercado."
+            text2="Todos os reparos realizados contam com garantia do serviço e
+            peça, variando de acordo com cada produto, para você nosso
+            cliente ter a segurança que merece."
+          />
 
           <AboutCard
             icon="mdi:battery-heart-variant"
