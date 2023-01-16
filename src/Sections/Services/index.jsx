@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Heading } from '@chakra-ui/react';
 import Service from '../../Components/Service';
 
 const Services = () => {
@@ -61,9 +61,9 @@ const Services = () => {
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Smartphone"
-            mTitle="15px"
             icon="ion:phone-portrait-outline"
             description={smartphoneServices}
+            mTitle="15px"
           />
         </GridItem>
         <GridItem colSpan={2} display="flex" justifyContent="center">
@@ -85,10 +85,10 @@ const Services = () => {
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Acessórios"
-            subTitle=" Venda"
-            mTitle="20px"
             icon="mdi:cable-data"
             description={accessoriesServices}
+            subTitle=" Venda"
+            mTitle="20px"
           />
         </GridItem>
       </Grid>
