@@ -5,6 +5,8 @@ import './Topper.css';
 const Topper = () => {
   return (
     <Box
+      id="home"
+      className="home"
       display="flex"
       alignItems="center"
       justifyContent="space-between"

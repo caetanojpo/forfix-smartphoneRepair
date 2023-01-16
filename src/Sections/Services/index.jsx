@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Heading } from '@chakra-ui/react';
 import Service from '../../Components/Service';
 
 const Services = () => {
@@ -38,7 +38,7 @@ const Services = () => {
   return (
     <Flex
       id="services"
-      class="services"
+      className="services"
       flexDirection="column"
       height="100%"
       padding="60px 0px"
@@ -47,6 +47,7 @@ const Services = () => {
         textAlign="center"
         h={{ base: '15%', lg: '10%' }}
         fontSize={{ base: '55px', lg: '65px' }}
+        paddingBottom={{ base: '15px', lg: '0px' }}
       >
         Serviços
       </Heading>
@@ -60,33 +61,34 @@ const Services = () => {
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Smartphone"
-            mTitle="20px"
             icon="ion:phone-portrait-outline"
             description={smartphoneServices}
+            mTitle="15px"
           />
         </GridItem>
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Computador"
-            mTitle="35px"
             icon="ion:desktop-outline"
             description={computerServices}
+            pButton="50px 0px"
           />
         </GridItem>
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Video Game"
-            mTitle="35px"
             icon="carbon:game-console"
             description={consoleServices}
+            pButton="50px 0px"
           />
         </GridItem>
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
             title="Acessórios"
-            mTitle="20px"
             icon="mdi:cable-data"
             description={accessoriesServices}
+            subTitle=" Venda"
+            mTitle="20px"
           />
         </GridItem>
       </Grid>

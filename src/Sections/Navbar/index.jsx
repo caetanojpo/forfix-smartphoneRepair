@@ -1,4 +1,4 @@
-import { Image } from '@chakra-ui/react';
+import { Image, Link } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme';
@@ -28,10 +28,13 @@ const Navbar = () => {
       </ThemeProvider>
 
       <Container>
-        <Image w={{ base: '150px', md: '200px' }} src="/FORFIX_4-09.png" />
+        <Link href="#home">
+          <Image w={{ base: '150px', md: '200px' }} src="/FORFIX_4-09.png" />
+        </Link>
+
         <DivNav>
           <UlNav>
-            <LiNav as="a" href="/">
+            <LiNav as="a" href="#home">
               Home
             </LiNav>
             <LiNav as="a" href="#services">

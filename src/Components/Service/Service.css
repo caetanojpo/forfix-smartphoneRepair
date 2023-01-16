@@ -3,9 +3,27 @@
   height: 60px;
 }
 
+.serviceCard {
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.wppbtn {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
 @media screen and (min-width: 1024px) {
   .icones {
     width: 75px;
     height: 75px;
+  }
+
+  .container .box:hover .serviceCard {
+    transform: translate(2rem, 2rem);
+  }
+
+  .container .box:hover .wppbtn {
+    transform: translate(-2rem, -2rem);
   }
 }

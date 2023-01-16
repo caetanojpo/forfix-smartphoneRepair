@@ -3,8 +3,8 @@ import { Flex, Heading, Image } from '@chakra-ui/react';
 const Brands = () => {
   return (
     <>
-      <Flex justifyContent="center" bg="black" color="white" paddingTop="10px">
-        <Heading as="h3" fontSize="28px">
+      <Flex justifyContent="center" paddingBottom="20px">
+        <Heading as="h3" fontSize="28px" textAlign="center">
           Marcas que trabalhamos
         </Heading>
       </Flex>
@@ -12,12 +12,13 @@ const Brands = () => {
       <Flex
         bg="black"
         color="white"
-        h={{ base: '100%' }}
+        h="100%"
         flexDir={{ base: 'column', md: 'row' }}
-        padding={{ base: '20px' }}
+        padding="20px"
         textAlign="center"
-        justifyContent={{ base: 'center' }}
-        gap={{ base: '40px' }}
+        justifyContent="center"
+        alignItems="center"
+        gap="40px"
       >
         <Flex
           justifyContent="center"

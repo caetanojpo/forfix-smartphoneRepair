@@ -1,4 +1,4 @@
-import { Box, Flex, Highlight, Text } from '@chakra-ui/react';
+import { Box, Flex, Highlight, Image, Text } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
 
 const AboutCard = (props) => {
@@ -15,7 +15,11 @@ const AboutCard = (props) => {
         alignItems="center"
         justifyContent="center"
       >
-        <Icon fontSize="50px" icon={props.icon} />
+        {props.imagePath ? (
+          <Image h="100px" w="100px" src={props.imagePath} />
+        ) : (
+          <Icon fontSize="50px" icon={props.icon} color="black" />
+        )}
       </Box>
       <Box
         display="flex"

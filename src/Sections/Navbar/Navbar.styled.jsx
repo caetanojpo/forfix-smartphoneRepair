@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  z-index: 3;
   background-color: black;
   display: flex;
   width: 100%;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
   }
 `;
 
