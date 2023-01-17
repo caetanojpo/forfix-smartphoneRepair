@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Button,
   Flex,
@@ -53,17 +54,9 @@ const Service = (props) => {
               >
                 {props.title}
                 {props.subTitle && (
-                  <Highlight
-                    query="Venda"
-                    styles={{
-                      py: '1',
-                      fontWeight: '600',
-                      fontSize: '10px',
-                      color: '#EF8D4E',
-                    }}
-                  >
+                  <Badge ml="1" variant="subtle" colorScheme="orange">
                     {props.subTitle}
-                  </Highlight>
+                  </Badge>
                 )}
               </Text>
             </Flex>

@@ -35,6 +35,7 @@ const Infos = () => {
         link="/"
         icon="material-symbols:mail-outline-rounded"
         title="email@forfix.com.br"
+        email="true"
       />
       <InfoCard
         link="https://api.whatsapp.com/send?phone=5518996396222&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!"
