@@ -2,12 +2,11 @@ import {
   Flex,
   Image,
   Link,
-  List,
-  ListIcon,
   ListItem,
   Text,
   UnorderedList,
 } from '@chakra-ui/react';
+import { Link as LinkRoute } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import './Footer.css';
 
@@ -34,24 +33,28 @@ const Footer = () => {
               flexDir="column"
               gap="10px"
             >
-              <Link _hover={{ color: '#EF8D4E' }} href="/">
+              <Link _hover={{ color: '#EF8D4E' }} href="/#home">
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   Home
                 </ListItem>
               </Link>
-              <Link _hover={{ color: '#EF8D4E' }} href="/">
+              <Link _hover={{ color: '#EF8D4E' }} href="#services">
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   Serviços
                 </ListItem>
               </Link>
-              <Link _hover={{ color: '#EF8D4E' }} href="/">
+              <Link _hover={{ color: '#EF8D4E' }} href="#about">
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />A Empresa
                 </ListItem>
               </Link>
-              <Link _hover={{ color: '#EF8D4E' }} href="/">
+              <Link
+                as={LinkRoute}
+                _hover={{ color: '#EF8D4E' }}
+                to="/politicaDePrivacidade"
+              >
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   Política de Privacidade
