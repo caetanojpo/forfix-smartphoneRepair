@@ -63,6 +63,7 @@ const Services = () => {
             title="Smartphone"
             icon="ion:phone-portrait-outline"
             description={smartphoneServices}
+            link="https://wa.me/5518996396222?text=Ol%C3%A1.+Estou+precisando+de+ajuda+com+o+meu+smartphone%2C+aguardo+o+seu+retorno."
             mTitle="15px"
           />
         </GridItem>
@@ -71,6 +72,7 @@ const Services = () => {
             title="Computador"
             icon="ion:desktop-outline"
             description={computerServices}
+            link="https://wa.me/5518996396222?text=Ol%C3%A1.+Estou+precisando+de+ajuda+com+o+meu+computador/notebbok%2C+aguardo+o+seu+retorno."
             pButton="50px 0px"
           />
         </GridItem>
@@ -79,6 +81,7 @@ const Services = () => {
             title="Video Game"
             icon="carbon:game-console"
             description={consoleServices}
+            link="https://wa.me/5518996396222?text=Ol%C3%A1.+Estou+precisando+de+ajuda+com+o+meu+video+game%2C+aguardo+o+seu+retorno."
             pButton="50px 0px"
           />
         </GridItem>
@@ -87,6 +90,7 @@ const Services = () => {
             title="Acessórios"
             icon="mdi:cable-data"
             description={accessoriesServices}
+            link="https://wa.me/5518996396222?text=Ol%C3%A1.+Gostaria+de+comprar+um+acess%C3%B3rio%2C+aguardo+seu+retorno."
             subTitle=" Venda"
             mTitle="20px"
           />
