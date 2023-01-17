@@ -13,16 +13,30 @@ import './Footer.css';
 const Footer = () => {
   return (
     <Flex bg="black" w="100vw" h="100%" flexDir="column" color="white">
-      <Flex h="180px" justifyContent="center" alignItems="center" w="100%">
-        <Flex w="30%" justifyContent="center">
+      <Flex
+        h={{ base: '100%', lg: '180px' }}
+        justifyContent="center"
+        alignItems="center"
+        w="100%"
+        flexDir={{ base: 'column', lg: 'row' }}
+        padding={{ base: '20px 0px', lg: '0px' }}
+        gap={{ base: '20px', lg: '0px' }}
+      >
+        <Flex w={{ base: '100%', lg: '30%' }} justifyContent="center">
           <Image
             src="/forfixlogo2-11-v2.png"
             w={{ base: '90px', lg: '180px' }}
           />
         </Flex>
-        <Flex w="70%" h="100%">
+        <Flex
+          w={{ base: '100%', lg: '70%' }}
+          h="100%"
+          flexDir={{ base: 'column', lg: 'row' }}
+          gap={{ base: '20px', lg: '0px' }}
+          alignItems="center"
+        >
           <Flex
-            w="60%"
+            w={{ base: '100%', lg: '60%' }}
             flexDir="column"
             padding="5px 10px"
             justifyContent="center"
@@ -32,6 +46,8 @@ const Footer = () => {
               display="flex"
               flexDir="column"
               gap="10px"
+              margin={{ base: '0px' }}
+              alignItems={{ base: 'center', lg: 'flex-start' }}
             >
               <Link _hover={{ color: '#EF8D4E' }} href="/#home">
                 <ListItem display="flex" gap="5px" alignItems="center">
@@ -85,9 +101,10 @@ const Footer = () => {
       </Flex>
       <Flex
         h="100%"
-        padding="20px 0px"
+        padding={{ base: '20px', lg: '20px 0px' }}
         justifyContent="center"
         alignItems="center"
+        textAlign="center"
       >
         <Text>Todos os direitos reservados. - Copyright © 2023</Text>
       </Flex>
