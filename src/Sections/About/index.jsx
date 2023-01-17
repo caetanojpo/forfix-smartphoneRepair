@@ -14,6 +14,7 @@ const About = () => {
         alignItems="flex-start"
         justifyContent="center"
         flexDir={{ base: 'column', lg: 'row' }}
+        marginBottom="50px"
       >
         <Box
           w={{ base: '', lg: '20%' }}
