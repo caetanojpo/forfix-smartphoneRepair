@@ -78,6 +78,7 @@ const Service = (props) => {
                 {props.description.map((item) => {
                   return (
                     <ListItem
+                      key={item}
                       display="flex"
                       lineHeight="100%"
                       fontSize={{ base: '13px', lg: '15px' }}
@@ -101,29 +102,42 @@ const Service = (props) => {
               padding={props.pButton || '20px 0px'}
             >
               <Button
-                display={{ base: 'block', lg: 'none' }}
+                display={{ base: 'flex', lg: 'none' }}
                 bg="black"
                 color="white"
-                w="150px"
-                h="35px"
+                w="200px"
+                h="40px"
+                _active={{ bg: '#EF8D4E' }}
               >
-                <Link href="/">Tenho interesse!</Link>
+                <Icon icon="ic:baseline-whatsapp" />
+                <Link href={props.link} fontSize="15px">
+                  &nbsp;Tenho interesse!
+                </Link>
               </Button>
             </Flex>
           </Flex>
         </Box>
 
         <Flex
-          className="wppbtn"
+          className="contactButton"
           w="390px"
           h="480px"
           padding="5px"
-          justifyContent="flex-start"
-          alignItems="flex-start"
+          justifyContent="center"
           display={{ base: 'none', lg: 'flex' }}
         >
-          <Button bg="black" color="white" w="150px" h="35px">
-            <Link href="/">Tenho interesse!</Link>
+          <Button
+            bg="black"
+            color="white"
+            w="250px"
+            h="55px"
+            _hover={{ bg: '#EF8D4E' }}
+            _active={{ bg: '#EF8D4E' }}
+          >
+            <Icon width="30px" icon="ic:baseline-whatsapp" />
+            <Link href={props.link} target="_blank" fontSize="18px">
+              &nbsp;Tenho Interesse
+            </Link>
           </Button>
         </Flex>
       </Box>
