@@ -1,4 +1,4 @@
-import { Flex, Heading, Image } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Heading, Image } from '@chakra-ui/react';
 
 const Brands = () => {
   return (
@@ -9,81 +9,43 @@ const Brands = () => {
         </Heading>
       </Flex>
 
-      <Flex
+      <Grid
         bg="black"
-        color="white"
-        h="100%"
-        flexDir={{ base: 'column', md: 'row' }}
-        padding="20px"
-        textAlign="center"
-        justifyContent="center"
-        alignItems="center"
-        gap="40px"
+        w="100%"
+        p="25px"
+        gap="60px"
+        display={{ base: 'grid', lg: 'flex' }}
+        justifyContent={{ base: '', lg: 'center' }}
+        templateRows={{ base: 'repeat(4, 1fr)', lg: 'repeat(1, 1fr)' }}
+        templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(7, 1fr)' }}
       >
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/apple.png" h="70x" w="60px" />
-        </Flex>
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        </GridItem>
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/samsung.png" h="40px" w="100px" />
-        </Flex>
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        </GridItem>
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/motorola.png" h="60px" w="60px" />
-        </Flex>
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        </GridItem>
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/xiaomi.png" h="60px" w="60px" />
-        </Flex>
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        </GridItem>
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/acer.png" h="30px" w="90px" />
-        </Flex>
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
-        >
+        </GridItem>
+        <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/dell.png" h="80px" w="80px" />
-        </Flex>
-        <Flex
+        </GridItem>
+        <GridItem
+          display="flex"
           justifyContent="center"
           alignItems="center"
-          w="110px"
-          h="110px"
-          borderRadius="100%"
+          colSpan={{ base: '2', lg: '1' }}
         >
           <Image src="/logosBrands/lenovo.png" h="20px" w="90px" />
-        </Flex>
-      </Flex>
+        </GridItem>
+      </Grid>
     </>
   );
 };

@@ -7,14 +7,19 @@ const InfoCard = (props) => {
     <>
       {props.email ? (
         <Button
+          as={Link}
+          className="links"
+          w={{ base: '', md: '25%' }}
           display="flex"
-          flexDirection="column"
+          flexDir={{ base: 'row', md: 'column' }}
+          alignItems="center"
           justifyContent="space-between"
-          w="200px"
-          h="80px"
-          bg="transparent"
+          p="0px"
+          gap={{ base: '20px' }}
           _hover={{ bg: 'transparent', color: '#EF8D4E' }}
           _active={{ bg: 'transparent' }}
+          bg="transparent"
+          h="80px"
           onClick={() => {
             navigator.clipboard.writeText(props.title);
             toast({
@@ -27,7 +32,7 @@ const InfoCard = (props) => {
           }}
         >
           <Icon className="icons" icon={props.icon} />
-          <Text fontSize="16px" fontWeight="450">
+          <Text w="90%" fontWeight="400">
             {props.title}
           </Text>
         </Button>
@@ -39,7 +44,7 @@ const InfoCard = (props) => {
           flexDir={{ base: 'row', md: 'column' }}
           alignItems="center"
           gap={{ base: '20px' }}
-          href="/"
+          href={props.link}
         >
           <Icon className="icons" icon={props.icon} />
           <Box display="flex" flexDir="column" alignItems="center" flex="1">

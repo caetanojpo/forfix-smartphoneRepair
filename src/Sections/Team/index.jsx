@@ -30,8 +30,8 @@ const Team = () => {
           <Image
             w={{ base: '', lg: '200px' }}
             src="/perfil.jpeg"
-            borderRadius="200px"
             outline="5px solid black"
+            borderRadius="200px"
           />
         </Box>
 
