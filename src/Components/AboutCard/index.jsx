@@ -6,11 +6,12 @@ const AboutCard = (props) => {
     <Box
       display="flex"
       alignItems="center"
+      justifyContent="center"
       flexDir={{ base: 'column', lg: 'row' }}
     >
       <Box
-        h="100px"
-        w="100px"
+        h="120px"
+        w="120px"
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -24,18 +25,20 @@ const AboutCard = (props) => {
       <Box
         display="flex"
         flexDir="column"
-        w={{ base: '', lg: '60%' }}
+        w={{ base: '', lg: '100%' }}
         gap="10px"
       >
         <Text fontWeight="700" fontSize="20px" color="#EF8D4E">
           {props.title}
         </Text>
-        <Flex flexDir="column" gap="5px">
+        <Flex
+          flexDir="column"
+          gap="5px"
+          flexWrap="nowrap"
+          w={{ base: '100%', lg: '800px' }}
+        >
           <Text textAlign="justify">
-            <Highlight
-              query="Nossa missão:"
-              styles={{ py: '1', fontWeight: '600' }}
-            >
+            <Highlight query="Nossa missão:" styles={{ fontWeight: '600' }}>
               {props.text1}
             </Highlight>
           </Text>

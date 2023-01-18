@@ -23,7 +23,7 @@ const Topper = () => {
         marginRight={{ base: '5px', sm: '5px', md: '20px', lg: '20px' }}
         w={{ base: '60px', sm: '60px', md: '120px' }}
         display="flex"
-        gap={{ base: '5px', md: '20px' }}
+        gap={{ base: '5px', md: '10px' }}
       >
         <Link
           w={{ base: '60px', sm: '60px', md: '120px' }}
