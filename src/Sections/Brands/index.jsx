@@ -18,7 +18,6 @@ const Brands = () => {
         justifyContent={{ base: '', lg: 'center' }}
         templateRows={{ base: 'repeat(4, 1fr)', lg: 'repeat(1, 1fr)' }}
         templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(7, 1fr)' }}
-        marginBottom="100px"
       >
         <GridItem display="flex" justifyContent="center" alignItems="center">
           <Image src="/logosBrands/apple.png" h="70x" w="60px" />

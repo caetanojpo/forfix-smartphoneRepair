@@ -1,0 +1,12 @@
+#about {
+    height: 0px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    #about {
+        height: 1px;
+        margin-bottom: 80px;
+    }
+
+}

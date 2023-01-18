@@ -1,11 +1,12 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import AboutCard from '../../Components/AboutCard';
+import './About.css';
 
 const About = () => {
   return (
     <>
+      <div id="about" />
       <Flex
-        id="about"
         padding={{ base: '0px 40px', lg: '0px 50px' }}
         h={{ base: '100%', lg: '100%' }}
         w="100%"
@@ -13,6 +14,7 @@ const About = () => {
         justifyContent={{ base: 'center', lg: 'center' }}
         flexDir={{ base: 'column', lg: 'row' }}
         marginBottom="50px"
+        marginTop={{ base: '50px', lg: '' }}
       >
         <Box w="fit-content" display={{ base: 'none', lg: 'flex' }}>
           <Image w="350px" src="/instagrambg.png" />
