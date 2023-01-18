@@ -89,6 +89,7 @@ const Footer = () => {
             flexDir="column"
             alignItems="center"
             justifyContent="center"
+            marginTop="20px"
           >
             <Link
               target="_blank"
@@ -99,8 +100,11 @@ const Footer = () => {
               justifyContent="center"
               gap="5px"
             >
-              <Text>Desenvolvido por</Text>
-              <Image w="150px" src="/4.png" />
+              <Text fontWeight="500">Desenvolvido por</Text>
+              <Image w="95px" src="/LogoTYou.png" />
+              <Text fontSize="14px" fontWeight="700">
+                @tyoutecnologia
+              </Text>
             </Link>
           </Flex>
         </Flex>
@@ -112,7 +116,7 @@ const Footer = () => {
         alignItems="center"
         textAlign="center"
       >
-        <Text>Todos os direitos reservados. - Copyright © 2023</Text>
+        <Text>Todos os direitos reservados - Copyright © 2023</Text>
       </Flex>
     </Flex>
   );
