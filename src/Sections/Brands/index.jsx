@@ -3,8 +3,8 @@ import { Flex, Grid, GridItem, Heading, Image } from '@chakra-ui/react';
 const Brands = () => {
   return (
     <>
-      <Flex justifyContent="center" paddingBottom="20px">
-        <Heading as="h3" fontSize="28px" textAlign="center">
+      <Flex bg="black" justifyContent="center" padding="20px 0px">
+        <Heading color="white " as="h3" fontSize="28px" textAlign="center">
           Marcas que trabalhamos
         </Heading>
       </Flex>

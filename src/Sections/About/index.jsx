@@ -13,7 +13,7 @@ const About = () => {
         alignItems={{ base: 'flex-start', lg: 'center' }}
         justifyContent={{ base: 'center', lg: 'center' }}
         flexDir={{ base: 'column', lg: 'row' }}
-        marginBottom="50px"
+        marginBottom="80px"
         marginTop={{ base: '50px', lg: '' }}
       >
         <Box w="fit-content" display={{ base: 'none', lg: 'flex' }}>

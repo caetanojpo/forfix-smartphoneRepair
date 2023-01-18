@@ -61,17 +61,7 @@ const Footer = () => {
                   Home
                 </ListItem>
               </Link>
-              <Link _hover={{ color: '#EF8D4E' }} href="#services">
-                <ListItem display="flex" gap="5px" alignItems="center">
-                  <Icon icon="mdi:link-variant" color="white" />
-                  Serviços
-                </ListItem>
-              </Link>
-              <Link _hover={{ color: '#EF8D4E' }} href="#about">
-                <ListItem display="flex" gap="5px" alignItems="center">
-                  <Icon icon="mdi:link-variant" color="white" />A Empresa
-                </ListItem>
-              </Link>
+
               <Link
                 as={LinkRoute}
                 _hover={{ color: '#EF8D4E' }}
@@ -80,6 +70,26 @@ const Footer = () => {
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   Política de Privacidade
+                </ListItem>
+              </Link>
+              <Link
+                _hover={{ color: '#EF8D4E' }}
+                target="_blank"
+                href="https://www.instagram.com/forfix.assistencia/"
+              >
+                <ListItem display="flex" gap="5px" alignItems="center">
+                  <Icon icon="mdi:link-variant" color="white" />
+                  Instagram
+                </ListItem>
+              </Link>
+              <Link
+                target="_blank"
+                _hover={{ color: '#EF8D4E' }}
+                href="https://api.whatsapp.com/send/?phone=5518996396222&text=Ol%C3%A1%21+Vim+pelo+seu+site+e+preciso+dos+seus+servi%C3%A7os&type=phone_number&app_absent=0"
+              >
+                <ListItem display="flex" gap="5px" alignItems="center">
+                  <Icon icon="mdi:link-variant" color="white" />
+                  WhatsApp
                 </ListItem>
               </Link>
             </UnorderedList>

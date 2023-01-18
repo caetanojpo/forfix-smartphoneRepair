@@ -14,6 +14,7 @@ const Team = () => {
       flexDir={{ base: 'column' }}
       color="black"
       padding={{ base: '50px', lg: '50px 100px' }}
+      marginTop="50px"
     >
       <Text
         color="black"

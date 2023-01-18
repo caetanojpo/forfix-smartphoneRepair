@@ -7,19 +7,18 @@ import Services from '../../Sections/Services';
 import Team from '../../Sections/Team';
 import Brands from '../../Sections/Brands';
 import Footer from '../../Sections/Footer';
+import ExtraServices from '../../Sections/ExtraServices';
 
 const Home = () => {
   return (
     <>
-      <Topper />
-      <Navbar />
       <Banner />
       <Infos />
       <Services />
-      <Brands />
+      <ExtraServices />
       <About />
+      <Brands />
       <Team />
-      <Footer />
     </>
   );
 };

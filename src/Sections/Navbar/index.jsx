@@ -28,7 +28,7 @@ const Navbar = () => {
       </ThemeProvider>
 
       <Container>
-        <Link href="#home">
+        <Link href="/#home">
           <Image
             display={{ base: 'none', lg: 'block' }}
             marginLeft={{ lg: '10px' }}
@@ -45,16 +45,16 @@ const Navbar = () => {
 
         <DivNav>
           <UlNav>
-            <LiNav as="a" href="#home">
+            <LiNav as="a" href="/#home">
               Home
             </LiNav>
-            <LiNav as="a" href="#services">
+            <LiNav as="a" href="/#services">
               Serviços
             </LiNav>
-            <LiNav as="a" href="#about">
+            <LiNav as="a" href="/#about">
               A Empresa
             </LiNav>
-            <LiNav as="a" href="#team">
+            <LiNav as="a" href="/#team">
               Equipe
             </LiNav>
             <ButtonNav
