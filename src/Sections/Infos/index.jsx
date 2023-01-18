@@ -15,7 +15,7 @@ const Infos = () => {
       gap={{ base: '40px' }}
     >
       <InfoCard
-        link="/"
+        link="https://beacons.ai/forfix.assistencia"
         icon="material-symbols:nest-clock-farsight-analog-outline"
         title="Segunda à Sexta-feira"
         text="08h-18h"
@@ -38,7 +38,8 @@ const Infos = () => {
         email="true"
       />
       <InfoCard
-        link="https://api.whatsapp.com/send?phone=5518996396222&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!"
+        target="_self"
+        link="tel:+5518996396222"
         icon="material-symbols:phone-android-outline"
         title="(18) 99639-6222"
       />

@@ -23,17 +23,23 @@ const Banner = () => {
           >
             SEU APARELHO QUEBROU?
           </Text>
-          <Text fontSize={{ base: '0px', lg: '32px' }}>
+          <Text fontSize={{ base: '0px', md: '26px', lg: '32px' }}>
             NÓS PODEMOS CONSERTA-LO!
           </Text>
           <Button
+            display={{ base: 'block', md: 'none' }}
             className="btn"
             bg="black"
             color="white"
             w={{ base: '100%', lg: '200px' }}
             h={{ base: '60px' }}
           >
-            <Link href="/">Entre em contato agora!</Link>
+            <Link
+              target="_blank"
+              href="https://wa.me/5518996396222?text=Ol%C3%A1%21+Vim+pelo+seu+site+e+preciso+dos+seus+servi%C3%A7os"
+            >
+              Entre em contato agora!
+            </Link>
           </Button>
         </Box>
         <Box

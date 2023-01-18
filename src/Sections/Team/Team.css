@@ -2,16 +2,15 @@
     background-image: url("../../../public/cool-background4.png");
     background-size: cover;
     background-position: left;
-
-
-
 }
 
 @media screen and (min-width: 1024px) {
     .team {
 
-        background-image: url("../../../public/cool-background2.png");
+        background-image: url("../../../public/cool-background5.png");
         background-size: cover;
-        background-position: top;
+        background-position: center;
+
+
     }
 }

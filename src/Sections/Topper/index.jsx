@@ -10,7 +10,7 @@ const Topper = () => {
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      h={35}
+      h="35px"
     >
       <Text
         marginLeft={{ base: '5px', sm: '5px', md: '20px', lg: '20px' }}
@@ -30,39 +30,14 @@ const Topper = () => {
           target="_blank"
           href="https://www.facebook.com/profile.php?id=100087227011260"
         >
-          <Icon
-            width="100%"
-            cursor="pointer"
-            target="_blank"
-            href="https://www.facebook.com/profile.php?id=100087227011260"
-            icon="ic:baseline-facebook"
-            className="facebook"
-          />
+          <Icon width="30px" icon="ic:baseline-facebook" className="facebook" />
         </Link>
         <Link
           w={{ base: '60px', sm: '60px', md: '120px' }}
           target="_blank"
           href="https://www.instagram.com/forfix.assistencia/"
         >
-          <Icon
-            width="100%"
-            cursor="pointer"
-            target="_blank"
-            icon="mdi:instagram"
-            className="insta"
-          />
-        </Link>
-        <Link
-          w={{ base: '60px', sm: '60px', md: '120px' }}
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=5518996396222&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!"
-        >
-          <Icon
-            width="100%"
-            cursor="pointer"
-            icon="ic:baseline-whatsapp"
-            className="whats"
-          />
+          <Icon width="30px" icon="mdi:instagram" className="insta" />
         </Link>
       </Box>
     </Box>

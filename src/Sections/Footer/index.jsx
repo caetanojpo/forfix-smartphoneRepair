@@ -24,8 +24,14 @@ const Footer = () => {
       >
         <Flex w={{ base: '100%', lg: '30%' }} justifyContent="center">
           <Image
-            src="/forfixlogo2-11-v2.png"
-            w={{ base: '90px', lg: '180px' }}
+            display={{ base: 'block', lg: 'none' }}
+            src="/Forfix-Orange-Logo-Escrita.png"
+            w={{ base: '150px', lg: '180px' }}
+          />
+          <Image
+            display={{ base: 'none', lg: 'block' }}
+            src="/FORFIX_4-09.png"
+            w={{ base: '150px', lg: '300px' }}
           />
         </Flex>
         <Flex

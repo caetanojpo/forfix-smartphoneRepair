@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Flex,
-  Highlight,
   Link,
   List,
   ListItem,
@@ -100,10 +99,11 @@ const Service = (props) => {
                 color="white"
                 w="200px"
                 h="40px"
+                _hover={{ bg: '#EF8D4E' }}
                 _active={{ bg: '#EF8D4E' }}
               >
                 <Icon icon="ic:baseline-whatsapp" />
-                <Link href={props.link} fontSize="15px">
+                <Link target="_blank" href={props.link} fontSize="15px">
                   &nbsp;Tenho interesse!
                 </Link>
               </Button>

@@ -38,6 +38,7 @@ const InfoCard = (props) => {
         </Button>
       ) : (
         <Link
+          target={props.target || '_blank'}
           className="links"
           w={{ base: '', md: '25%' }}
           display="flex"

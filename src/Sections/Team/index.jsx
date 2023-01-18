@@ -6,7 +6,7 @@ const Team = () => {
     <Flex
       id="team"
       className="team"
-      h={{ base: '100%', lg: '100vh' }}
+      h={{ base: '100%', lg: '80vh' }}
       w="100vw"
       alignItems="center"
       justifyContent="center"
@@ -28,9 +28,9 @@ const Team = () => {
       >
         <Box>
           <Image
-            w={{ base: '', lg: '200px' }}
+            w={{ base: '', lg: '220px' }}
             src="/perfil.jpeg"
-            outline="5px solid black"
+            border="5px solid black"
             borderRadius="200px"
           />
         </Box>
