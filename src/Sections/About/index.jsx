@@ -34,7 +34,12 @@ const About = () => {
           >
             UM POUCO DA NOSSA HISTÓRIA
           </Text>
-          <Flex flexDir="column" alignItems="center" justifyContent="center">
+          <Flex
+            flexDir="column"
+            alignItems="center"
+            justifyContent="center"
+            gap={{ base: '', lg: '20px' }}
+          >
             <AboutCard
               imagePath="/FORFIX_6-12.png"
               title="A empresa"
