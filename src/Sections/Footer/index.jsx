@@ -82,12 +82,7 @@ const Footer = () => {
                   WhatsApp
                 </ListItem>
               </Link>
-              <Link
-                as={LinkRoute}
-                _hover={{ color: '#EF8D4E' }}
-                to="/politicaDePrivacidade"
-                href="#politics"
-              >
+              <Link as={LinkRoute} _hover={{ color: '#EF8D4E' }} to="/politica">
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   Política de Privacidade

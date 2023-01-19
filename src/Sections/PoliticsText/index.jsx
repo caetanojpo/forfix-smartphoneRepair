@@ -11,6 +11,7 @@ import {
   Text,
   UnorderedList,
 } from '@chakra-ui/react';
+import { ScrollRestoration } from 'react-router-dom';
 import PoliticsList from '../../Components/PoliticsList';
 import TermsList from '../../Components/TermsList';
 
@@ -39,7 +40,7 @@ const PoliticsText = () => {
   ];
 
   const shareList = [
-    'Dentro de nossa Empresa incluindo todas as divisões de negócios;',
+    'Dentro de nossa Empresa, incluindo todas as divisões de negócios;',
     'Com os nossos prestadores de serviços de terceiros que realizam operações de negócios em nosso nome;',
     'Para proteger e defender a Empresa (incluindo nossos Termos e Condições);',
     'Quando exigido por lei e / ou autoridades governamentais.',
@@ -100,27 +101,43 @@ const PoliticsText = () => {
   ];
 
   return (
-    <Flex w="100%" justifyContent="center" id="politics">
-      <Flex flexDir="column" padding="50px" gap="10px" maxW="80%">
+    <Flex
+      w="100%"
+      justifyContent="center"
+      id="politics"
+      textAlign={{ base: 'left', lg: 'justify' }}
+      fontSize="14px"
+    >
+      <Flex
+        flexDir="column"
+        padding={{ base: '20px 0px', lg: '40px' }}
+        gap="10px"
+        maxW="90%"
+      >
         <Box>
           <Heading>POLÍTICA DE PRIVACIDADE</Heading>
         </Box>
         <Divider />
         <Text marginBottom="20px">
-          Para Navegar em nosso site é importante que leia na íntegra nossa
+          Para Navegar em nosso site, assim como enviar qualquer informação pelo
+          nosso(s) formulário(s), é importante que leia na íntegra nossa
           Política de Privacidade e Termos de Uso.
         </Text>
         <Stack spacing="15px">
-          <Heading fontSize="20px">POLÍTICA DE PRIVACIDADE</Heading>
-          <Text>
-            <Highlight
-              query="Forfix - Assistência Técnica"
-              styles={{ fontWeight: 600 }}
-            >
-              Este site é operado pela empresa: Forfix - Assistência Técnica
-              política e termos foram atualizados em 15 de Março de 2022
-            </Highlight>
-          </Text>
+          <Heading fontSize="16px">POLÍTICA DE PRIVACIDADE</Heading>
+          <Stack spacing="0px">
+            <Text>
+              <Highlight
+                query="Forfix - Assistência Técnica"
+                styles={{ fontWeight: 600 }}
+              >
+                Este site é operado pela empresa: Forfix - Assistência Técnica
+              </Highlight>
+            </Text>
+            <Text>
+              Política e termos foram atualizados em 19 de Janeiro de 2023
+            </Text>
+          </Stack>
           <Text>
             Para sua informação, e comunicação, a sua privacidade é muito
             importante para nós, e nós entendemos o quanto é importante para
@@ -136,9 +153,9 @@ const PoliticsText = () => {
             A única informação pessoal que teremos é o que você voluntariamente
             forneceu para nós
           </Text>
-          <Heading fontSize="20px">Esta política abrange:</Heading>
+          <Heading fontSize="16px">Esta política abrange:</Heading>
           <PoliticsList list={politicsList} />
-          <Heading fontSize="20px">
+          <Heading fontSize="16px">
             AS INFORMAÇÕES QUE COLETAMOS DE VOCÊ
           </Heading>
           <Text>
@@ -171,13 +188,13 @@ const PoliticsText = () => {
             consulte a nossa Política de Cookies para obter mais informações
             sobre o assunto).
           </Text>
-          <Heading fontSize="20px"> USO DA SUA INFORMAÇÃO</Heading>
+          <Heading fontSize="16px"> USO DA SUA INFORMAÇÃO</Heading>
           <Text>
             O objetivo para os quais pedimos, processamos e armazenamos suas
             informações pessoais inclui, mas não se restringe a:
           </Text>
           <PoliticsList list={infoList} />
-          <Heading fontSize="20px">COMPARTILHAR SUAS INFORMAÇÕES</Heading>
+          <Heading fontSize="16px">COMPARTILHAR SUAS INFORMAÇÕES</Heading>
           <Text>
             Aceitando nossos termos de Política de Privacidade, podemos
             compartilhar suas informações:
@@ -185,7 +202,7 @@ const PoliticsText = () => {
 
           <PoliticsList list={shareList} />
 
-          <Heading fontSize="20px">SEGURANÇA E RETENÇÃO DE DADOS</Heading>
+          <Heading fontSize="16px">SEGURANÇA E RETENÇÃO DE DADOS</Heading>
           <Text>
             Em nossa Empresa, a segurança da informação é muito importante e
             temos tomado várias medidas para garantir que a sua informação é
@@ -199,22 +216,22 @@ const PoliticsText = () => {
             exige, lembrando que em qualquer momento pode ser solicitado sua
             exclusão, basta nos contatar solicitando.
           </Text>
-          <Heading fontSize="20px">COOKIES</Heading>
+          <Heading fontSize="16px">COOKIES</Heading>
           <Text>
             Por favor, consulte nossa Política de Cookies abaixo para obter
             informações sobre cookies e nosso uso deles.
           </Text>
-          <Heading fontSize="20px">SEUS DIREITOS</Heading>
+          <Heading fontSize="16px">SEUS DIREITOS</Heading>
           <Text>Você tem os seguintes direitos:</Text>
           <PoliticsList list={lawList} />
-          <Heading fontSize="20px">COMO NOS CONTACTAR</Heading>
+          <Heading fontSize="16px">COMO NOS CONTACTAR</Heading>
           <Text>
             Use os dados corretos de contato (e-mail, telefone ou correio), como
             mostrado em nosso site na sessão contatos se deseja exercer qualquer
             dos seus direitos ou se você tiver quaisquer outras questões
             relacionadas com o uso de suas informações.
           </Text>
-          <Heading fontSize="20px">
+          <Heading fontSize="16px">
             ALTERAÇÕES À NOSSA POLÍTICA DE PRIVACIDADE
           </Heading>
           <Text>
@@ -222,10 +239,10 @@ const PoliticsText = () => {
             favor, verifique esta página regularmente para garantir que são
             estão atualizados.
           </Text>
-          <Heading fontSize="20px">POLÍTICA DE COOKIES</Heading>
+          <Heading fontSize="16px">POLÍTICA DE COOKIES</Heading>
           <Text fontWeight={600}>Esta política abrange:</Text>
           <PoliticsList list={cookieList} />
-          <Heading fontSize="20px">O QUE SÃO COOKIES?</Heading>
+          <Heading fontSize="16px">O QUE SÃO COOKIES?</Heading>
           <Text>
             Cookies são pequenos arquivos de texto que podem definir
             preferências, dependendo de suas escolhas no seu dispositivo quando
@@ -245,13 +262,13 @@ const PoliticsText = () => {
             Os cookies de sessão: estes permanecem no seu dispositivo até que
             você fechar o navegador quando eles são excluídos automaticamente.
           </Text>
-          <Heading fontSize="20px">COMO USAMOS COOKIES?</Heading>
+          <Heading fontSize="16px">COMO USAMOS COOKIES?</Heading>
           <Text>
             Nós usamos cookies para personalizar o conteúdo que você recebe do
             nosso site, por exemplo:
           </Text>
           <PoliticsList list={useCookieList} />
-          <Heading fontSize="20px">
+          <Heading fontSize="16px">
             SERÁ QUE OS COOKIES RECOLHEM OS MEUS DADOS PESSOAIS?
           </Heading>
           <Text>
@@ -259,7 +276,7 @@ const PoliticsText = () => {
             você pessoalmente identificável. Ele pode ser usado para
             identificá-lo como um visitante único, mas anônimo a um site.
           </Text>
-          <Heading fontSize="20px">POSSO DIZER NÃO A ELES?</Heading>
+          <Heading fontSize="16px">POSSO DIZER NÃO A ELES?</Heading>
           <Text>
             Você pode se recusar a aceitar alguns ou todos os cookies, basta
             ativar as configurações do seu navegador que lhe permite fazer isso.
@@ -270,21 +287,21 @@ const PoliticsText = () => {
             do nosso site e podemos pensar que você nunca nos visitou antes e,
             portanto, servir-lhe com o nosso Aviso de Cookies novamente.
           </Text>
-          <Heading fontSize="20px">GOOGLE ANALYTICS</Heading>
+          <Heading fontSize="16px">GOOGLE ANALYTICS</Heading>
           <Text>
             Este site também usa o Google Analytics, um serviço de análise
             fornecido pelo Google, Inc. ( &quot;Google&quot;). O Google
             Analytics utiliza cookies para ajudar na análise de navegação do
             site.
           </Text>
-          <Heading fontSize="20px">COMO NOS CONTACTAR</Heading>
+          <Heading fontSize="16px">COMO NOS CONTACTAR</Heading>
           <Text>
             Use os dados apropriados de contato (e-mail, telefone ou correio),
             em nosso site na sessão contatos se deseja exercer qualquer dos seus
             direitos ou se você tiver quaisquer outras questões relacionadas com
             o uso de suas informações.
           </Text>
-          <Heading fontSize="20px">
+          <Heading fontSize="16px">
             ALTERAÇÕES DA NOSSA POLÍTICA DE COOKIES
           </Heading>
           <Text>
@@ -294,7 +311,7 @@ const PoliticsText = () => {
         </Stack>
 
         <Stack spacing="15px">
-          <Heading fontSize="20px">TERMOS DE USO</Heading>
+          <Heading fontSize="16px">TERMOS DE USO</Heading>
           <List>
             <TermsList listItens={termsList} />
           </List>
