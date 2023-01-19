@@ -20,22 +20,22 @@ const Brands = () => {
         templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(7, 1fr)' }}
       >
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/apple.png" h="70x" w="60px" />
+          <Image src="/logosBrands/apple.png" h="60px" />
         </GridItem>
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/samsung.png" h="40px" w="100px" />
+          <Image src="/logosBrands/samsung.png" w="120px" />
         </GridItem>
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/motorola.png" h="60px" w="60px" />
+          <Image src="/logosBrands/motorola.png" h="60px" />
         </GridItem>
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/xiaomi.png" h="60px" w="60px" />
+          <Image src="/logosBrands/xiaomi.png" h="60px" />
         </GridItem>
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/acer.png" h="30px" w="90px" />
+          <Image src="/logosBrands/acer.png" w="120px" />
         </GridItem>
         <GridItem display="flex" justifyContent="center" alignItems="center">
-          <Image src="/logosBrands/dell.png" h="80px" w="80px" />
+          <Image src="/logosBrands/dell.png" h="60px" />
         </GridItem>
         <GridItem
           display="flex"
@@ -43,7 +43,7 @@ const Brands = () => {
           alignItems="center"
           colSpan={{ base: '2', lg: '1' }}
         >
-          <Image src="/logosBrands/lenovo.png" h="20px" w="90px" />
+          <Image src="/logosBrands/lenovo.png" w="120px" />
         </GridItem>
       </Grid>
     </>

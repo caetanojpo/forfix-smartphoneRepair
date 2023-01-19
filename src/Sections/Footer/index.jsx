@@ -63,16 +63,6 @@ const Footer = () => {
               </Link>
 
               <Link
-                as={LinkRoute}
-                _hover={{ color: '#EF8D4E' }}
-                to="/politicaDePrivacidade"
-              >
-                <ListItem display="flex" gap="5px" alignItems="center">
-                  <Icon icon="mdi:link-variant" color="white" />
-                  Política de Privacidade
-                </ListItem>
-              </Link>
-              <Link
                 _hover={{ color: '#EF8D4E' }}
                 target="_blank"
                 href="https://www.instagram.com/forfix.assistencia/"
@@ -90,6 +80,17 @@ const Footer = () => {
                 <ListItem display="flex" gap="5px" alignItems="center">
                   <Icon icon="mdi:link-variant" color="white" />
                   WhatsApp
+                </ListItem>
+              </Link>
+              <Link
+                as={LinkRoute}
+                _hover={{ color: '#EF8D4E' }}
+                to="/politicaDePrivacidade"
+                href="#politics"
+              >
+                <ListItem display="flex" gap="5px" alignItems="center">
+                  <Icon icon="mdi:link-variant" color="white" />
+                  Política de Privacidade
                 </ListItem>
               </Link>
             </UnorderedList>

@@ -1,16 +1,19 @@
-.team {
+#team {
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.teamBox {
     background-image: url("../../../public/cool-background4.png");
     background-size: cover;
     background-position: left;
 }
 
 @media screen and (min-width: 1024px) {
-    .team {
+    .teamBox {
 
-        background-image: url("../../../public/cool-background5.png");
+        background-image: url("../../../public/teambg.png");
         background-size: cover;
         background-position: center;
-
-
     }
 }

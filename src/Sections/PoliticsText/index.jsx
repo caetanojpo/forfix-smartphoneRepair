@@ -37,17 +37,20 @@ const PoliticsText = () => {
     'Exceto conforme estabelecido acima, não vamos divulgar, vender ou alugar suas informações pessoais a terceiros, a menos que você tenha consentido a este ou se formos obrigados por lei a fazê-lo. Se você concorda, mas depois mudar de ideia, pode contactar-nos e vamos cessar qualquer atividade desse tipo;',
     'Se você se registrar on-line para qualquer um dos nossos serviços você poderá receber comunicações de marketing (e-mail ou outro), mas a qualquer momento entrando em contato conosco, poderá cancelar qualquer comunicação.',
   ];
+
   const shareList = [
     'Dentro de nossa Empresa incluindo todas as divisões de negócios;',
     'Com os nossos prestadores de serviços de terceiros que realizam operações de negócios em nosso nome;',
     'Para proteger e defender a Empresa (incluindo nossos Termos e Condições);',
     'Quando exigido por lei e / ou autoridades governamentais.',
   ];
+
   const lawList = [
     'O direito de nos pedir para atualizar e corrigir qualquer informação pessoal incorreta de que temos sobre você de forma gratuita;',
     'O direito de optar por sair de quaisquer comunicações de marketing que nós, para isso basta sua solicitação;',
     'Por favor, consulte nossa Política de Cookies para obter informações sobre os seus direitos em relação aos cookies.',
   ];
+
   const cookieList = [
     'O que são cookies?',
     'Como usamos cookies?',
@@ -59,6 +62,7 @@ const PoliticsText = () => {
     'Como nos contactar',
     'Alterações da nossa política de cookies',
   ];
+
   const useCookieList = [
     'Lembrando de suas preferências, escolhas de privacidade / consentimento, a sua edição, configuração ou linguagem escolhida, etc;',
     'Tornar a navegação mais fácil, e permitir que as nossas páginas sejam exibidas corretamente;',
@@ -94,8 +98,9 @@ const PoliticsText = () => {
       text: 'Estes Termos de Uso não geram nenhum contrato de sociedade, franquia ou relação de trabalho entre nossa empresa e o Usuário. O Usuário manifesta ciência de que nós não nos responsabilizamos por qualquer dano, prejuízo ou perda no equipamento do Usuário causado por falhas no sistema, no servidor ou na internet decorrentes de condutas de terceiros. Também não somos responsáveis por quaisquer vírus que possa atacar o equipamento do Usuário em decorrência do acesso, utilização ou navegação no site na internet; ou como consequência da transferência de dados, arquivos, imagens, textos/áudio ou anexos enviados por e-mails. Eventualmente, o sistema poderá não estar disponível por motivos técnicos ou falhas da internet, ou por qualquer outro evento fortuito ou de força maior alheio ao nosso controle. Em decorrência disso, o Usuário não poderá atribuir a nossa empresa qualquer responsabilidade nem exigir indenização em virtude de prejuízos resultantes de dificuldades técnicas ou falhas nos sistemas ou na internet. Nosso site pode referenciar outros sites da rede, mediante a apresentação de links, o que não significa que estes sites sejam de propriedade ou operados por nós. Não somos responsáveis pelos conteúdos, práticas e serviços ofertados em referidos sites. A presença de links para outros sites não implica relação de sociedade, de supervisão, de cumplicidade ou solidariedade com esses sites e seus conteúdos.',
     },
   ];
+
   return (
-    <Flex w="100%" justifyContent="center">
+    <Flex w="100%" justifyContent="center" id="politics">
       <Flex flexDir="column" padding="50px" gap="10px" maxW="80%">
         <Box>
           <Heading>POLÍTICA DE PRIVACIDADE</Heading>

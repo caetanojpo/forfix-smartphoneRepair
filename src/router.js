@@ -13,8 +13,6 @@ function RouterAPP() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/politicaDePrivacidade" element={<Politics />} />
-
-        <Route path="/*" element={<div>Página não encontrada</div>} />
       </Routes>
       <Footer />
     </BrowserRouter>

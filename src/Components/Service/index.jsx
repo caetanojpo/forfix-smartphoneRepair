@@ -95,15 +95,21 @@ const Service = (props) => {
             >
               <Button
                 display={{ base: 'flex', lg: 'none' }}
-                bg="black"
-                color="white"
+                bg="white"
+                color="#25D366"
                 w="200px"
                 h="40px"
+                border="1px solid #25D366"
                 _hover={{ bg: '#EF8D4E' }}
                 _active={{ bg: '#EF8D4E' }}
               >
-                <Icon icon="ic:baseline-whatsapp" />
-                <Link target="_blank" href={props.link} fontSize="15px">
+                <Icon icon="logos:whatsapp-icon" width="20px" />
+                <Link
+                  target="_blank"
+                  href={props.link}
+                  fontSize="15px"
+                  fontWeight="600"
+                >
                   &nbsp;Tenho interesse!
                 </Link>
               </Button>
@@ -120,12 +126,12 @@ const Service = (props) => {
           display={{ base: 'none', lg: 'flex' }}
         >
           <Button
-            bg="black"
+            bg="#25D366"
             color="white"
             w="250px"
             h="55px"
-            _hover={{ bg: '#EF8D4E' }}
-            _active={{ bg: '#EF8D4E' }}
+            _hover={{ transform: 'scale(0.95)' }}
+            _active={{ transform: 'scale(0.85)' }}
           >
             <Icon width="30px" icon="ic:baseline-whatsapp" />
             <Link href={props.link} target="_blank" fontSize="18px">
