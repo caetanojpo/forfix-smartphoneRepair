@@ -23,7 +23,7 @@ const Infos = () => {
       <InfoCard
         link="https://goo.gl/maps/FSRzZXtiQwjJLkNP6"
         icon="material-symbols:pin-drop"
-        title="Rua Fortunato Bornea, nº 08"
+        title="Rua Fortunato Bornea, 08"
         text="Assis/SP"
       />
       <InfoCard
