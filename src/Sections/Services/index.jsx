@@ -16,6 +16,7 @@ const Services = () => {
     'Formatação',
     'Reparo em Placa',
     'Limpeza Preventiva',
+    'Reparo em Acessórios',
     'Melhoria de Desempenho (Upgrade)',
   ];
 
@@ -23,6 +24,7 @@ const Services = () => {
     'Personalização',
     'Reparo em Placa',
     'Limpeza Preventiva',
+    'Reparo em Acessórios',
     'Substituição de Componentes',
   ];
 
@@ -69,7 +71,7 @@ const Services = () => {
         </GridItem>
         <GridItem colSpan={2} display="flex" justifyContent="center">
           <Service
-            title="Computador"
+            title="Computador/Notebook"
             icon="ion:desktop-outline"
             description={computerServices}
             link="https://wa.me/5518996396222?text=Ol%C3%A1.+Estou+precisando+de+ajuda+com+o+meu+computador/notebbok%2C+aguardo+o+seu+retorno."
