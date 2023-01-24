@@ -72,7 +72,7 @@ const Infos = () => {
               width="100px"
               onClick={onClose}
             >
-              Close
+              Voltar
             </Button>
             <Link
               target="_blank"
