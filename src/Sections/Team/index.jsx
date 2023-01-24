@@ -48,14 +48,15 @@ const Team = () => {
                 alignItems={{ base: 'center', lg: 'flex-start' }}
                 fontSize={{ base: '', lg: '20px' }}
               >
-                <Text fontWeight="bold">André Almeida</Text>
-                <Text>Empresário</Text>
+                <Text fontSize="24px" fontWeight="bold">
+                  André Almeida
+                </Text>
+                <Text>Empresário/Técnico</Text>
               </Flex>
               <Text textAlign="justify">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-                alias aliquam earum hic, voluptates ex illo accusamus quod.
-                Tempore porro praesentium omnis assumenda saepe perferendis
-                veniam reiciendis enim impedit nam.
+                Profissional na área técnica em manutenção de dispositivos
+                moveis, computadores e afins. Mais de cinco mil aparelhos
+                consertados.
               </Text>
             </Flex>
           </Flex>

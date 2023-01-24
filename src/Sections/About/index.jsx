@@ -59,7 +59,7 @@ const About = () => {
         confiança."
               text2="A Forfix surgiu com o objetivo de, além de atender as necessidades
         do nosso cliente superar as expectativas, proporcionando o máximo de
-        satisfação, segurança e agilidade em nosso serviço Zelamos pela mão
+        satisfação, segurança e agilidade em nosso serviço, zelamos pela mão
         de obra qualificada, confiança em nossos serviços e comprometimento
         com nosso cliente, ofertando o melhor serviço em assistência
         técnica, os melhores acessórios do mercado, originais e homologados."

@@ -1,0 +1,15 @@
+.iconWhats {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+}
+
+.iconWhats:hover {
+    opacity: 1;
+}

@@ -41,12 +41,9 @@ const Service = (props) => {
             <Icon className="icones" icon={props.icon} color="white" />
           </Flex>
           <Flex flexDirection="column">
-            <Flex
-              justifyContent="center"
-              paddingTop={{ base: '5px', lg: '0px' }}
-            >
+            <Flex justifyContent="center" paddingTop="5px">
               <Text
-                fontSize={{ base: '30px', lg: '40px' }}
+                fontSize={{ base: '25px', lg: '33px' }}
                 fontWeight="500"
                 textAlign="center"
                 marginBottom={props.mTitle || '35px'}
@@ -65,7 +62,7 @@ const Service = (props) => {
                 display="flex"
                 flexDirection="column"
                 justifyContent="flex-start"
-                padding={{ base: '0px 0px', lg: '0px 40px' }}
+                padding={{ base: '0px 10px', lg: '0px 40px' }}
               >
                 {props.description.map((item) => {
                   return (

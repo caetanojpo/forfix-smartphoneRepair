@@ -17,7 +17,7 @@ const Topper = () => {
         fontWeight="700"
         fontSize={{ base: '12px', md: '12px', lg: '16px' }}
       >
-        SUA ASSISTÊNCIA PERSONALIZADA
+        ASSISTÊNCIA TÉCNICA DE QUALIDADE
       </Text>
       <Box
         marginRight={{ base: '5px', sm: '5px', md: '20px', lg: '20px' }}

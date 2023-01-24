@@ -1,0 +1,11 @@
+.iconesBanner {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .iconesBanner {
+    width: 55px;
+    height: 55px;
+  }
+}
