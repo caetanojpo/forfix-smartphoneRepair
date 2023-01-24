@@ -1,5 +1,6 @@
-import { Flex, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
+import { ExtraButton, ExtraContainer } from './Extra.styled';
 
 const ExtraServices = () => {
   return (
@@ -7,38 +8,54 @@ const ExtraServices = () => {
       w="100%"
       h="250px"
       bg="black"
-      justifyContent="center"
-      alignItems="center"
       color="white"
       flexDir="column"
-      padding="20px 5px"
-      gap="10px"
-      bgImage="url('/bgfix.jpg')"
+      bgImage="url('/fixphone.png')"
       bgRepeat="no-repeat"
       bgSize="cover"
       bgPosition="bottom"
+      position="relative"
+      zIndex="2"
+      justifyContent="center"
+      alignItems="center"
     >
-      <Text
-        textAlign="center"
-        fontWeight={700}
-        fontSize={{ base: '20px', lg: '32px' }}
-      >
-        FAÇA SEU ORÇAMENTO DE FORMA GRATUITA
-      </Text>
-      <Link
-        w="80px"
-        h="80px"
-        display="flex"
+      <Flex
+        position="absolute"
         justifyContent="center"
         alignItems="center"
-        borderRadius="50px"
-        bg="#ffff"
-        border="3px solid #25D366"
-        target="_blank"
-        href="https://wa.me/5518996396222?text=Ol%C3%A1%21+Gostaria+de+fazer+um+orçamento."
+        h="100%"
+        bg="black"
+        w="100%"
+        opacity="75%"
+        zIndex="1"
+      />
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        padding="20px 5px"
+        gap="10px"
+        zIndex="2"
+        opacity="100%"
+        flexDir="column"
       >
-        <Icon width="30px" icon="ic:baseline-whatsapp" color="#25D366" />
-      </Link>
+        <Text
+          textAlign="center"
+          fontWeight={700}
+          fontSize={{ base: '22px', md: '28px', lg: '36px' }}
+        >
+          FAÇA SEU ORÇAMENTO DE FORMA GRATUITA
+        </Text>
+        <Link
+          mt="20px"
+          href="https://wa.me/5518996396222?text=Ol%C3%A1%21+Gostaria+de+fazer+um+orçamento."
+        >
+          <ExtraContainer>
+            <ExtraButton>
+              <Icon icon="ic:baseline-whatsapp" color="white" width="30" />
+            </ExtraButton>
+          </ExtraContainer>
+        </Link>
+      </Flex>
     </Flex>
   );
 };
