@@ -49,12 +49,12 @@ const Infos = () => {
             gap="25px"
           >
             <Stack spacing={4}>
-              <Text>Segunda-feira: 08h às 18h</Text>
-              <Text>Terça-feira: 08h às 18h</Text>
-              <Text>Quarta-feira: 08h às 18h</Text>
-              <Text>Quinta-feira: 08h às 18h</Text>
-              <Text>Sexta-feira: 08h às 18h</Text>
-              <Text>Sábados: 08h às 18h</Text>
+              <Text>Segunda-feira: 08h30min às 18h</Text>
+              <Text>Terça-feira: 08h30min às 18h</Text>
+              <Text>Quarta-feira: 08h30min às 18h</Text>
+              <Text>Quinta-feira: 08h30min às 18h</Text>
+              <Text>Sexta-feira: 08h30min às 18h</Text>
+              <Text>Sábados: 08h às 12h</Text>
             </Stack>
             <Text textAlign="justify" fontWeight="bold">
               Para atendimentos nos domingos, feriados ou fora do horário
