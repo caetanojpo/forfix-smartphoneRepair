@@ -97,8 +97,6 @@ const Service = (props) => {
                 w="200px"
                 h="40px"
                 border="1px solid #25D366"
-                _hover={{ bg: '#EF8D4E' }}
-                _active={{ bg: '#EF8D4E' }}
               >
                 <Icon icon="logos:whatsapp-icon" width="20px" />
                 <Link
