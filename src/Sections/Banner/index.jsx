@@ -66,16 +66,19 @@ const Banner = () => {
           <Text fontSize={{ base: '20px' }} fontWeight="700">
             ESPECIALISTAS EM CONSERTOS ELETRÔNICOS
           </Text>
-          <Text w={{ lg: '50%' }} textAlign="justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            voluptates earum, ea culpa nihil iusto blanditiis, veritatis magnam
-            vero eligendi possimus delectus a omnis? Ab eum harum sint modi
-            minima! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Totam, dolore explicabo hic id a ea fugit commodi odit eum numquam
-            tempora doloremque inventore alias neque, non ex libero dolorem
-            dignissimos!
-          </Text>
-          <h1>FORFIX - Assistência Técnica</h1>
+          <Box className="caixaTexto">
+            <Text w={{ lg: '100%' }}>
+              Preparados para te atender, quando se trata de reparos/manutenções
+              de Smartphones, Computadores/Notebooks, Video Games e Acessórios
+              do mais simples até o mais avançado, fornecendo peças de alta
+              qualidade, e mão de obra especializada. Extraindo o melhor da
+              união entre expertise e utilização de ferramentas adequadas para
+              solucionar o seu problema. Realizamos orçamentos sem custo, também
+              contamos com o serviço delivery (retirada e entrega do
+              equipamento).
+            </Text>
+            <h1>FORFIX - Assistência Técnica</h1>
+          </Box>
         </Box>
       </Flex>
       <Box

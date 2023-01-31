@@ -3,9 +3,36 @@
   height: 35px;
 }
 
+.caixaTexto {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
 @media screen and (min-width: 1024px) {
   .iconesBanner {
     width: 55px;
     height: 55px;
+  }
+
+  .caixaTexto {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .caixaTexto {
+    width: 80%;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .caixaTexto {
+    width: 50%;
   }
 }
