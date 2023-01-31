@@ -54,9 +54,15 @@ const Team = () => {
                 <Text>Empresário/Técnico</Text>
               </Flex>
               <Text textAlign="justify">
-                Profissional na área técnica em manutenção de dispositivos
-                moveis, computadores e afins. Mais de cinco mil aparelhos
-                consertados.
+                Profissional da área técnica em manutenção de dispositivos
+                móveis, computadores e afins. Residente na cidade de Assis/SP,
+                atuando por 5 anos no mercado de equipamentos eletrônicos,
+                proporcionando serviço de qualidade se tratando de reparos,
+                manutenções em Smartphones, Computadores/Notebooks, Video Games
+                e Acessórios, sendo mais de cinco mil aparelhos consertados.
+                Onde através da vontade de empreender criou a Forfix unindo a
+                satisfação e prazer pela profissão com a experiência do cliente,
+                entregando sempre o melhor.
               </Text>
             </Flex>
           </Flex>
