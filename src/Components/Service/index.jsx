@@ -24,7 +24,7 @@ const Service = (props) => {
           className="serviceCard"
           p="10px 10px"
           w={{ base: '300px', lg: '390px' }}
-          h={{ base: '430px', lg: '480px' }}
+          h={{ base: '450px', lg: '480px' }}
           borderRadius="20px"
           boxShadow="8px 8px 9px #c0cad4,
           -8px -8px 9px #f4ffff"
