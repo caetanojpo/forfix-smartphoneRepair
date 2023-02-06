@@ -38,7 +38,7 @@ const InfoCard = (props) => {
         </Button>
       ) : (
         <Link
-          onClick={props.modal || ''}
+          onClick={props.modal}
           target={props.target || '_blank'}
           className="links"
           w={{ base: '', md: '25%' }}
